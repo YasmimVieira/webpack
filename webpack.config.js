@@ -4,6 +4,10 @@ module.exports = {
         // Aplique as seguintes regras
         rules: [
             {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader'],
+            },
+            {
                 // Nos arquivos que terminam ($) com .js
                 test: /\.js$/,
                 // Não procure nada em node_modules
